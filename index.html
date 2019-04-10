@@ -1,1 +1,431 @@
-"Hello World" 
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Movify</title>
+    <link rel="stylesheet" href="prod-assets/style.css">
+  </head>
+  <body>
+      <div class="header">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                            <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
+                                <h1 class="display-3 font-weight-bold">BLADE RUNNER</h1>
+                            </div>
+                        <img class="d-block h-80 img-fluid" src="images/slide_1.jpg" alt="">
+                      </div>
+                      <div class="carousel-item">
+                            <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
+                                <h1 class="display-3 font-weight-bold">2001: A Space Oddysey</h1>
+                            </div>
+                        <img class="d-block h-80 img-fluid" src="images/slide_2.jpg" alt="">
+                      </div>
+                      <div class="carousel-item">
+                            <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
+                                <h1 class="display-3 font-weight-bold">Dark Knight</h1>
+                            </div>
+                        <img class="d-block h-80 img-fluid" src="images/slide_3.jpg" alt="">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-dark py-3">
+                        <a class="navbar-brand px-5 font-weight-bold" href="#">Movify</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown active ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Movies & TV Shows
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+                                </li>
+                            
+                            </ul>
+                            
+                        </div>
+                        <form class="form-inline my-2 myform">
+                                <input class="form-control form-control-lg mr-sm-2 " type="search" placeholder="Enter Movies or Series Titles" aria-label="Search">
+                                <button type="button" class="btn btn-primary btn-lg">Search</button>    
+                        </form>
+                        <form class="form-inline ">
+                            <div class="md-form my-0">
+                                <input class="form-control input-lg" type="text" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+            </nav>     
+    </div>
+    
+    <section class="latest-1">
+        <div class="container">
+            <div class="row pt-5 d-flex justify-content-between">
+                    <h1 class="display-5 ml-2">Latest Movies</h1>
+                    <button type="button" class="btn btn-primary btn-sm mr-3">VIEW ALL</button>   
+            </div>
+            <div class="row mt-5 d-flex">
+                    <div class="col-lg-3 col-md-6 col-sm-12 flex-fill hover-blur">
+                            <a href="#" title="">
+                                <img class="img-fluid rounded" style="width: auto; height: 400px;" src="images/latest_1.jpg" alt="">
+                                <h2><span class="text-white">ROMA</span></h2>
+                            </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 hover-blur">
+                        <a href="#" title="">
+                            <img class="img-fluid rounded shadow-lg" style="width: 280px; height: 400px;" src="images/latest_2.jpg" alt="">
+                            <h2><span class="text-white">ARRIVAL</span></h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 hover-blur">
+                        <a href="#" title="">
+                            <img class="img-fluid rounded shadow-lg" style="width: 280px; height: 400px;" src="images/latest_3.jpg" alt="">
+                            <h2><span class="text-white">AVATAR</span></h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 hover-blur">
+                        <a href="#" title="">
+                            <img class="img-fluid rounded shadow-lg" style="width: 280px; height: 400px;" src="images/latest_4.jpg" alt="">
+                            <h2><span class="text-white">MOONLIGHT</span></h2>
+                        </a>
+                    </div>
+        </div>
+    </div>
+
+    <section class="upcoming">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-white">
+                 <h1 class="display-5 ml-2 pb-2 justify-content-center text-white">Upcoming Movies & TV Shows</h1>
+                </div>
+                <div class="row py-5">
+                    <div class="col-8 col-lg-8 h-100">
+                        <img class="img-fluid rounded " style="height: 400px;" src="images/upcoming_big.png" alt="">
+                    </div>
+                    <div class="col-4 col-lg-4 pl-2 d-block" >
+                       <img class="img-fluid rounded" style="height: 200px;" src="images/upcoming_small_1.jpg" alt="Second slide">
+                       <img class="img-fluid rounded" style="height: 200px; padding-top: 10px;" src="images/upcoming_small_2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="latest-2">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                    <h1 class="display-5 ml-2">Latest TV Shows</h1>
+                    <button type="button" class="btn btn-primary btn-sm mr-3">VIEW ALL</button>   
+            </div>
+            <div class="row mt-4 d-flex">
+                    <div class="col-lg-3 col-md-6 col-sm-12 flex-fill hover-blur">
+                            <a href="#" title="">
+                                <img class="img-fluid rounded" style="width: auto; height: 400px;" src="images/latest_tv_1.jpg" alt="">
+                                <h2><span class="text-white">DAREDEVIL</span></h2>
+                            </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 hover-blur">
+                        <a href="#" title="">
+                            <img class="img-fluid rounded shadow-lg" style="width: 280px; height: 400px;" src="images/latest_tv_2.jpg" alt="">
+                            <h2><span class="text-white">FARGO</span></h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 hover-blur">
+                        <a href="#" title="">
+                            <img class="img-fluid rounded shadow-lg" style="width: 280px; height: 400px;" src="images/latest_tv_3.jpg" alt="">
+                            <h2><span class="text-white">ATLANTA</span></h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 hover-blur">
+                        <a href="#" title="">
+                            <img class="img-fluid rounded shadow-lg" style="width: 280px; height: 400px;" src="images/latest_tv_4.jpg" alt="">
+                            <h2><span class="text-white">LEFTOVERS</span></h2>
+                    </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="how py-3">
+        <div class="container py-5 ">
+            <div class="row text-justify text-center " style=" flex-direction: column;">
+                <h1 class="display-5 font-weight-bold ">How it works?</h1>
+                <p class="text-muted p-3 font-weight-light" style="font-size: 18px;">We will show you step by step how to start watching your favorite movies & tv shows starting now!</p>
+            </div>
+            <div class="row d-flex justify-content-center pt-5">
+                <button type="button" class="btn my-badge badge-pill" disabled>step 1</button>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12 ">
+                    <h3 >Create an account</h3>
+                    <p class="p-3 text-justify font-weight-light text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12 border-leftt">
+                    <img class="img-fluid" src="images/how_1.png" alt="">
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <button type="button" class="btn my-badge my-badge--second" disabled>step 2</button>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12 pt-5 border-rightt" >
+                    <img class="img-fluid" src="images/how_2.png" alt="">
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12 right">
+                    <h3 class="">Choose your Plan</h1>
+                    <p class="pt-3 pl-3 text-justify font-weight-light text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <button type="button" class="btn my-badge my-badge--third" disabled>step 3</button>
+            </div>
+            <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12 ">
+                    <h3 class="">Enjoy Movify</h1>
+                    <p class=" p-3 text-justify font-weight-light text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12 border-leftt" >
+                    <img class="img-fluid" src="images/how_3.png" alt="">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button type="button" class="btn fas fa-check my-badge my-badge--ok" disabled></button>
+            </div>
+        </div>
+    </div>
+
+    <section class="stats mt-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-4 col-lg-4">
+                    <h2 class="stats--h2">964</h1>
+                    <h2 class="stats--h2">Movies</h1>
+                </div>
+                <div class="col-4 col-lg-4">
+                    <h2 class="stats--h2">743</h1>
+                    <h2 class="stats--h2">TV Shows</h1>
+                </div>
+                <div class="col-4 col-lg-4">
+                        <h2 class="stats--h2">1207</h1>
+                        <h2 class="stats--h2">Users</h1>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="members">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                  <h3>Become a Premium Member</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="font-weight-bold h5 text-muted" scope="col">What You Get</th>
+                                        <th class="text-center font-weight-bold text-success h5" scope="col">Premium</th>
+                                        <th class="text-center font-weight-bold h5 text-muted" scope="col">Basic</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-muted" scope="row">HD available</th>
+                                        <td class="text-center text-success"><i class="fas fa-check"></i></td>
+                                        <td class="text-center text-secondary"><i class="fas fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-muted" scope="row">Ultra HD available</th>
+                                        <td class="text-center text-success"><i class="fas fa-check"></i></td>
+                                        <td class="text-center text-secondary"><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-muted" scope="row">Unlimited Movies and TV shows</th>
+                                        <td class="text-center text-success"><i class="fas fa-check"></i></td>
+                                        <td class="text-center text-secondary"><i class="fas fa-check"></i></td>
+                                        </tr>
+                                        <tr>
+                                        <th class="text-muted" scope="row">Watch on your phone & tablet</th>
+                                        <td class="text-center text-success"><i class="fas fa-check"></i></td>
+                                        <td class="text-center text-secondary"><i class="fas fa-times"></i></td>
+                                     </tr>
+                                     <tr>
+                                        <th class="text-muted" scope="row">Download and watch offline</th>
+                                        <td class="text-center text-success"><i class="fas fa-check"></i></td>
+                                        <td class="text-center text-secondary"><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-muted" scope="row">Screens you can watch</th>
+                                        <td class="text-center text-success font-weight-bold">5</td>
+                                        <td class="text-center text-secondary font-weight-bold">1</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-muted" scope="row">First Month Free</th>
+                                        <td class="text-center text-success"><i class="fas fa-check"></i></td>
+                                        <td class="text-center text-secondary"><i class="fas fa-check"></i></td>
+                                    </tr> 
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td class="text-center font-weight-bold">
+                                            <h5>$ 19.99 / mon</h5>
+                                            <button type="button" class="btn my-btn my-btn--shop"><i class="fas fa-shopping-cart"></i></button>
+                                        </td>
+                                        <td class="text-center font-weight-bold">
+                                            <h5>$ 9.99 / mon</h5>
+                                            <button type="button" class="btn my-btn my-btn--shop"><i class="fas fa-shopping-cart"></i></button>
+                                        </td>
+                                    </tr>                                          
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+            <div class="container pt-3">
+                <div class="row text-justify text-center pt-5" style=" flex-direction: column;">
+                    <h1 class="display-5 font-weight-bold ">Latest News</h1>
+                    <h6 class="font-weight-light pt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing.</h6>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card" style="">
+                            <img class="card-img-top" src="images/news_1.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Top 10 Action Movies</h5>
+                                <h4 class="card-title"><i class="pb-3 fas fa-calendar icon-calendar"></i>01/02/2018s</h4>
+                                <p class="card-text pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis...</p>
+                                <a href="#" class="btn  btn-sm">READ MORE</a>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card" style="">
+                            <img class="card-img-top" src="images/news_2.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Oscar Awards</h5>
+                                <h4 class="card-title"><i class="pb-3 fas fa-calendar icon-calendar"></i>01/02/2018s</h4>
+                                <p class="card-text pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis...</p>
+                                <a href="#" class="btn  btn-sm">READ MORE</a>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card" style="">
+                            <img class="card-img-top" src="images/news_3.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Top Upcoming Movies</h5>
+                                <h4 class="card-title"><i class="pb-3 fas fa-calendar icon-calendar"></i>01/02/2018s</h4>
+                                <p class="card-text pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis...</p>
+                                <a href="#" class="btn  btn-sm">READ MORE</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="join">
+            <div class="container pt-5">
+                <div class="row text-justify text-center pt-5 d-flex flex-column">
+                    <h1 class="display-5 font-weight-bold ">Join Movify Now!</h1>
+                    <h6 class="font-weight-light pt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing.</h6>
+                </div>
+                <div class="row pt-5">
+                    <form class="form-inline my-2">
+                        <input class="form-control form-control-lg" type="search" placeholder="Your Email" aria-label="Search">
+                        <button type="button" class="btn my-btn">SUBSCRIBE</button>    
+                </form>
+                </div>
+             </div>
+         </section>
+
+         <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Movify</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, ducimus, atque. Praesentium suscipit provident explicabo dignissimos nostrum numquam deserunt earum accusantium et fugit.</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Useful Links</h4>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Latest News</h4> 
+                     </div>
+
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <hr></hr>
+                </div>
+        </section>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
