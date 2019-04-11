@@ -169,6 +169,17 @@ body {
        border-radius: 5px;       
      }
 
+     &--social {
+      color: #00b489;
+      background-color: #a9e6cf;
+      font-size: 12px; 
+      max-width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+     }
+
       &:hover {
         background-color: lighten($color: #9352b3, $amount: 5);
         color: white;
@@ -360,21 +371,60 @@ body {
   }
 }
 
+.general-listing {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  color: #948a99;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.useful{
+  li {
+    padding-bottom: 15px;
+   }
+
+   a{
+     &:hover {
+      padding-left: 14px;
+     }
+   }
+  
+}
+
+.latest{
+  small {
+    display: block;
+    padding-bottom: 20px;
+    color: #a8a1ac;
+    font-size: 80%;
+    font-weight: 500;
+    text-transform: uppercase;
+  } 
+}
+
 .footer {
-  height: 75vh;
+  flex-direction: column;
+  height: 50vh;
   background-color: #3e4555!important;
   padding-top: 90px;
+  color:#948a99;
 
   h4{
     font-size: 24px;
     color: white;
+    font-weight: bold;
+    padding-bottom: 20px;
   }
 
   p {
-    padding-top: 30px;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: normal;
     line-height: 24px;
-    color: #fff;;
+    color: darken($color: white, $amount: 10);
     margin-bottom: 1.7em;
   }
 
@@ -388,9 +438,46 @@ body {
     border-width: .1px;
   }
 
+  button{
+    padding-right: 25px;
+  }
+  
+  a {
+    color: darken($color: white, $amount: 10);
+    text-decoration: none;
+    //padding-bottom: 15px;
+    transition: .2s all;
+     &:hover {
+       cursor: pointer;
+       color: #9352b3;
+       transition-delay: 0s;
+     }
+  }
 }
 
+.footer-copyright{
+  color: #948a99;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  list-style: none;
 
+  ul{
+    padding-left: 0;
+  }
+
+  li{
+    display: inline-block;
+    padding-right: 20px;
+  }
+  
+}
+
+.copyright{
+  margin-left: auto !important;
+  margin-right: 50px;
+  color: darken($color: white, $amount: 10);
+}
 
 
     //hover effect

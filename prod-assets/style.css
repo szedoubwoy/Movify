@@ -136,6 +136,15 @@ body {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px; }
+  .my-btn--social {
+    color: #00b489;
+    background-color: #a9e6cf;
+    font-size: 12px;
+    max-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%; }
   .my-btn:hover {
     background-color: #9e64bb;
     color: white;
@@ -272,18 +281,46 @@ body {
     margin-inline-start: 12em;
     margin-inline-end: 12em; }
 
+.general-listing {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  color: #948a99;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  list-style: none; }
+
+.useful li {
+  padding-bottom: 15px; }
+
+.useful a:hover {
+  padding-left: 14px; }
+
+.latest small {
+  display: block;
+  padding-bottom: 20px;
+  color: #a8a1ac;
+  font-size: 80%;
+  font-weight: 500;
+  text-transform: uppercase; }
+
 .footer {
-  height: 75vh;
+  flex-direction: column;
+  height: 50vh;
   background-color: #3e4555 !important;
-  padding-top: 90px; }
+  padding-top: 90px;
+  color: #948a99; }
   .footer h4 {
     font-size: 24px;
-    color: white; }
+    color: white;
+    font-weight: bold;
+    padding-bottom: 20px; }
   .footer p {
-    padding-top: 30px;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: normal;
     line-height: 24px;
-    color: #fff;
+    color: #e6e6e6;
     margin-bottom: 1.7em; }
   .footer hr {
     width: 100%;
@@ -293,6 +330,33 @@ body {
     margin-right: auto;
     border-style: solid;
     border-width: .1px; }
+  .footer button {
+    padding-right: 25px; }
+  .footer a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: .2s all; }
+    .footer a:hover {
+      cursor: pointer;
+      color: #9352b3;
+      transition-delay: 0s; }
+
+.footer-copyright {
+  color: #948a99;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  list-style: none; }
+  .footer-copyright ul {
+    padding-left: 0; }
+  .footer-copyright li {
+    display: inline-block;
+    padding-right: 20px; }
+
+.copyright {
+  margin-left: auto !important;
+  margin-right: 50px;
+  color: #e6e6e6; }
 
 .text-white {
   color: #fff; }
