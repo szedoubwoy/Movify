@@ -13,8 +13,30 @@
 *, ::after, ::before {
   box-sizing: border-box; }
 
+footer, header, main, div, nav, section {
+  display: block; }
+
 body {
   font-family: 'Montserrat', sans-serif; }
+
+img, section {
+  position: relative; }
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none; }
+
+.img-box, html, main, section {
+  position: relative; }
+
+.parallax {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  z-index: 99;
+  opacity: 0; }
 
 .myform {
   position: absolute;
@@ -42,9 +64,19 @@ body {
 .header {
   height: 100vh; }
 
+.ptb-100 {
+  padding: 160px 0;
+  padding-top: 180px;
+  padding-right: 0px;
+  padding-bottom: 160px;
+  padding-left: 0px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
 .latest-1 {
-  height: 150vh;
-  margin-top: 140px; }
+  display: block;
+  height: 150vh; }
   .latest-1 h1 {
     font-weight: 600;
     color: #3e4555;
@@ -58,22 +90,98 @@ body {
     color: #3e4555;
     font-size: 38px; }
 
+.movie-box {
+  position: relative; }
+  .movie-box .poster {
+    max-height: 480px;
+    overflow: hidden; }
+    .movie-box .poster img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      vertical-align: middle;
+      border-style: none; }
+    .movie-box .poster:before {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      z-index: 8;
+      opacity: 0;
+      -webkit-transition: all .4s ease;
+      -moz-transition: all .4s ease;
+      -ms-transition: all .4s ease;
+      -o-transition: all .4s ease;
+      transition: all .4s ease;
+      content: "";
+      height: 100%;
+      width: 100%;
+      color: white;
+      background: -webkit-gradient(linear, left top, left bottom, from(#a11f3c), to(#9352b3));
+      background: -webkit-linear-gradient(bottom, #9352b3 0%, #a11f3c 100%);
+      background: -o-linear-gradient(bottom, #9352b3 0%, #a11f3c 100%);
+      background: linear-gradient(to bottom, #a11f3c 0%, #9352b3 100%); }
+    .movie-box .poster:after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      display: block;
+      bottom: 0;
+      z-index: 9;
+      color: white;
+      background: -webkit-linear-gradient(bottom, rgba(35, 35, 37, 0.9) 0, rgba(35, 35, 37, 0.5) 35%, rgba(22, 22, 23, 0) 60%, rgba(0, 0, 0, 0) 100%);
+      background: -o-linear-gradient(bottom, rgba(35, 35, 37, 0.9) 0, rgba(35, 35, 37, 0.5) 35%, rgba(22, 22, 23, 0) 60%, rgba(0, 0, 0, 0) 100%);
+      background: linear-gradient(to top, rgba(35, 35, 37, 0.9) 0, rgba(35, 35, 37, 0.5) 35%, rgba(22, 22, 23, 0) 60%, rgba(0, 0, 0, 0) 100%); }
+  .movie-box .details {
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0;
+    visibility: hidden; }
+  .movie-box .released {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    padding-top: 20px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease; }
+  .movie-box .movie-details {
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0;
+    visibility: hidden; }
+  .movie-box .movie-title {
+    margin: 0;
+    color: #fff;
+    font-size: 24px; }
+  .movie-box h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; }
+
 .upcoming {
-  height: 77vh;
+  height: 80vh;
   opacity: 0.95;
   margin-top: 100px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   padding-top: 90px;
-  background-image: url("../images/blurred.jpg");
-  background-size: auto 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .upcoming img {
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; }
+  background-image: url("../images/blurred.jpg"); }
 
 .my-badge {
   background-color: #e3e3e3;
@@ -306,6 +414,7 @@ body {
   text-transform: uppercase; }
 
 .footer {
+  position: relative;
   flex-direction: column;
   height: 50vh;
   background-color: #3e4555 !important;
