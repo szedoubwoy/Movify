@@ -39,10 +39,11 @@ img{
 }
 
 .parallax {
+  position: relative;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 10% 50%;
   background-size: cover;
-  z-index: 99;
+  z-index: 59;
   opacity: 0;
 }
 
@@ -93,7 +94,6 @@ img{
 .latest-1{
   display: block;
   height: 150vh;
-
   h1{
     font-weight: 600;
     color: #3e4555;
@@ -112,68 +112,49 @@ img{
     font-size: 38px;
     }
   }
+ 
 
 .movie-box{
     position: relative;
+    transition: .2s ease-in-out;
 
+    &:hover{
+      .poster img { opacity: .4; }
+      .details{
+        opacity:1;
+        -webkit-transition: opacity .25s ease-in-out .0s;
+        transition: opacity .25s ease-in-out .0s;
+        padding: 20px;
+        transition-delay: 0s;
+      }
+    }
+   
     .poster {
       max-height: 480px;
       overflow: hidden;
-      //width: 100%;
+      background: -webkit-gradient(linear,left top,left bottom,from(#a11f3c),to(#9352b3));
+      background: -webkit-linear-gradient(bottom,#9352b3 0%,#a11f3c 100%);
+      background: -o-linear-gradient(bottom,#9352b3 0%,#a11f3c 100%);
+      background: linear-gradient(to bottom,#a11f3c 0%,#9352b3 100%);
+
       img{
-        //position: relative;
         width: 100%;
         height: auto;
-       // max-width: 100%;
         object-fit: cover;
         vertical-align: middle;
         border-style: none;
-        //overflow: hidden;
+
+        opacity: 1;
+	      -webkit-transition: .3s ease-in-out;
+	      transition: .3s ease-in-out;
       }
-
-      &:before {
-        position: absolute;
-        display: block;
-        bottom: 0;
-        z-index: 8;
-        opacity: 0;
-        -webkit-transition: all .4s ease;
-        -moz-transition: all .4s ease;
-        -ms-transition: all .4s ease;
-        -o-transition: all .4s ease;
-        transition: all .4s ease;
-
-        content: "";
-        height: 100%;
-        width: 100%;
-        color: white;
-        background: -webkit-gradient(linear,left top,left bottom,from(#a11f3c),to(#9352b3));
-        background: -webkit-linear-gradient(bottom,#9352b3 0%,#a11f3c 100%);
-        background: -o-linear-gradient(bottom,#9352b3 0%,#a11f3c 100%);
-        background: linear-gradient(to bottom,#a11f3c 0%,#9352b3 100%);
-
-        
-      }
-
-      &:after {
-        content: "";
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        display: block;
-        bottom: 0;
-        z-index: 9;
-        color: white;
-        background: -webkit-linear-gradient(bottom,rgba(35,35,37,.9) 0,rgba(35,35,37,.5) 35%,rgba(22,22,23,0) 60%,rgba(0,0,0,0) 100%);
-        background: -o-linear-gradient(bottom,rgba(35,35,37,.9) 0,rgba(35,35,37,.5) 35%,rgba(22,22,23,0) 60%,rgba(0,0,0,0) 100%);
-        background: linear-gradient(to top,rgba(35,35,37,.9) 0,rgba(35,35,37,.5) 35%,rgba(22,22,23,0) 60%,rgba(0,0,0,0) 100%);
-      }
-
     }
 
     .details {
+      width: 250px;
+      max-height: auto;
       margin: 0;
-     color: #fff;
+      color: #fff;
       position: absolute;
       bottom: 0;
       -webkit-transition: all .5s ease;
@@ -181,10 +162,27 @@ img{
       -ms-transition: all .5s ease;
       -o-transition: all .5s ease;
       transition: all .5s ease;
+      text-align: center;
+      padding: 0px;
       opacity: 0;
-      visibility: hidden;
 
-      
+      &--sm-1{
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &--sm-2{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &--bg{
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }  
     } 
 
     .released {
@@ -198,19 +196,6 @@ img{
       -o-transition: all .6s ease;
       transition: all .6s ease;
     }
-
-    .movie-details{
-      position: absolute;
-      bottom: 0;
-      -webkit-transition: all .5s ease;
-      -moz-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-      -o-transition: all .5s ease;
-      transition: all .5s ease;
-      opacity: 0;
-      visibility: hidden;
-      
-    }
   
     .movie-title {
       margin: 0;
@@ -219,14 +204,12 @@ img{
     }
 
     h4{
-      display: block;
       margin-block-start: 1.33em;
       margin-block-end: 1.33em;
       margin-inline-start: 0px;
       margin-inline-end: 0px;
     }
-
-  }
+}
 
  .upcoming{
     height: 80vh;
@@ -235,7 +218,9 @@ img{
     padding-bottom: 40px;
     padding-top: 90px;
     background-image: url('../images/blurred.jpg');
-}
+    background-attachment: fixed;
+    background-position: 50% -51.7904px;
+  }
 
 .my-badge {
   background-color: #e3e3e3;
@@ -334,8 +319,6 @@ img{
       }
     
 }
-
-
 
 .border-leftt{
   border-left: 2px dashed lightgray;
