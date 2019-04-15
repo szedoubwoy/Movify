@@ -15,56 +15,28 @@
     <link rel="stylesheet" href="prod-assets/style.css">
   </head>
   <body>
-      <div class="header">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                            <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
-                                <h1 class="display-3 font-weight-bold">Dark Knight</h1>
-                            </div>
-                        <img class="d-block h-80 img-fluid" src="images/slide_1.jpg" alt="">
-                      </div>
-                      <div class="carousel-item">
-                            <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
-                                <h1 class="display-3 font-weight-bold">BLADE RUNNER</h1>
-                            </div>
-                        <img class="d-block h-80 img-fluid" src="images/slide_2.jpg" alt="">
-                      </div>
-                      <div class="carousel-item">
-                            <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
-                                <h1 class="display-3 font-weight-bold">2001: A Space Oddysey</h1>
-                            </div>
-                        <img class="d-block h-80 img-fluid" src="images/slide_3.jpg" alt="">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
-                </div>
-
-                <nav class="navbar navbar-expand-lg navbar-dark py-3">
-                        <a class="navbar-brand px-5 font-weight-bold" href="#">Movify</a>
+      <header class="header">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand  font-weight-bold" style="font-size: 38px;" href="#">Movify</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         
                         <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav mx-auto">
                                 <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown active ">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Pages
+                                        pages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Actors</a>
+                                        <a class="dropdown-item" href="#">Directors</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Coming Soon</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown active">
@@ -72,10 +44,10 @@
                                         Movies & TV Shows
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Movie List 1</a>
+                                        <a class="dropdown-item" href="#">Movie List 2</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">More Movie List's</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown active">
@@ -83,30 +55,63 @@
                                         Blog
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Blog List</a>
+                                    <a class="dropdown-item" href="#">Blog List 2</a>
                                     <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Blog Details</a>
                                     </div>
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
                                 </li>
-                            
                             </ul>
+                            <ul class="navbar-nav extra-nav">
+
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <i class="fa fa-search"></i>
+                                </a>
+                                </li>
+
+                                <li class="nav-item m-auto">
+                                <button type="button" class="btn"><i class="fas fa-user"> Login</i></button>
+                                </a>
+                                </li>
+                             </ul>
                             
                         </div>
-                        <form class="form-inline my-2 myform">
-                                <input class="form-control form-control-lg mr-sm-2 " type="search" placeholder="Enter Movies or Series Titles" aria-label="Search">
-                                <button type="button" class="btn btn-primary btn-lg">Search</button>    
-                        </form>
-                        <form class="form-inline ">
-                            <div class="md-form my-0">
-                                <input class="form-control input-lg" type="text" placeholder="Search" aria-label="Search">
-                            </div>
-                        </form>
-            </nav>     
-    </div>
+                        
+                </nav>  
+                </div>
+            </header>  
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
+                            <h1 class="display-3 font-weight-bold">Dark Knight</h1>
+                        </div>
+                    <img class="d-block h-80 img-fluid" src="images/slide_1.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
+                            <h1 class="display-3 font-weight-bold">BLADE RUNNER</h1>
+                        </div>
+                    <img class="d-block h-80 img-fluid" src="images/slide_2.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
+                            <h1 class="display-3 font-weight-bold">2001: A Space Oddysey</h1>
+                        </div>
+                    <img class="d-block h-80 img-fluid" src="images/slide_3.jpg" alt="">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
     
     <section class="latest-1 ptb-100">
         <div class="container">
@@ -115,9 +120,8 @@
                     <h1 class="display-5 ml-2">Latest Movies</h1>
                 </div>
                 <div class="col-md-4 align-self-center text-md-right text-sm-left">
-                    <button type="button" class="btn btn-primary btn-sm mr-3">VIEW ALL</button>   
+                    <a href="#" class="btn">view all</a>
                 </div>
-               
             </div>
             <div class="row mt-5 d-flex">
                     <div class="col-lg-3 col-md-6 col-sm-12 flex-fill">
@@ -144,8 +148,9 @@
                             <h2><span class="text-white">MOONLIGHT</span></h2>
                         </a>
                     </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <section class="upcoming ptb-100 parallax">
             <div class="container">
@@ -192,11 +197,15 @@
 
     <section class="latest-2 ptb-100">
         <div class="container">
-            <div class="row d-flex justify-content-between">
-                    <h1 class="display-5 ml-2">Latest TV Shows</h1>
-                    <button type="button" class="btn btn-primary btn-sm mr-3">VIEW ALL</button>   
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="display-5 ml-2">Latest Movies</h1>
+                </div>
+                <div class="col-md-4 align-self-center text-md-right text-sm-left">
+                    <a href="#" class="btn">view all</a>
+                </div>
             </div>
-            <div class="row mt-4 d-flex">
+            <div class="row mt-5 d-flex">
                     <div class="col-lg-3 col-md-6 col-sm-12 flex-fill hover-blur">
                             <a href="#" title="">
                                 <img class="img-fluid rounded" style="width: auto; height: 400px;" src="images/latest_tv_1.jpg" alt="">
@@ -231,7 +240,7 @@
                 <p class="text-muted p-3 font-weight-light" style="font-size: 18px;">We will show you step by step how to start watching your favorite movies & tv shows starting now!</p>
             </div>
             <div class="row d-flex justify-content-center pt-5">
-                <button type="button" class="btn my-badge badge-pill" disabled>step 1</button>
+                <button type="button" class="my-badge" disabled>step 1</button>
             </div>
             <div class="row">
                 <div class="col col-lg-6 col-md-6 col-sm-12 ">
@@ -244,7 +253,7 @@
             </div>
 
             <div class="row d-flex justify-content-center">
-                <button type="button" class="btn my-badge my-badge--second" disabled>step 2</button>
+                <button type="button" class="my-badge my-badge--second" disabled>step 2</button>
             </div>
             <div class="row">
                 <div class="col col-lg-6 col-md-6 col-sm-12 pt-5 border-rightt" >
@@ -257,7 +266,7 @@
             </div>
 
             <div class="row d-flex justify-content-center">
-                <button type="button" class="btn my-badge my-badge--third" disabled>step 3</button>
+                <button type="button" class="my-badge my-badge--third" disabled>step 3</button>
             </div>
             <div class="row">
                 <div class="col col-lg-6 col-md-6 col-sm-12 ">
@@ -269,7 +278,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <button type="button" class="btn fas fa-check my-badge my-badge--ok" disabled></button>
+                <button type="button" class="fas fa-check my-badge my-badge--ok" disabled></button>
             </div>
         </div>
     </div>
@@ -350,11 +359,11 @@
                                         <th scope="row"></th>
                                         <td class="text-center font-weight-bold">
                                             <h5>$ 19.99 / mon</h5>
-                                            <button type="button" class="btn my-btn my-btn--shop"><i class="fas fa-shopping-cart"></i></button>
+                                            <button type="button" class="btn"><i class="fas fa-shopping-cart"></i></button>
                                         </td>
                                         <td class="text-center font-weight-bold">
                                             <h5>$ 9.99 / mon</h5>
-                                            <button type="button" class="btn my-btn my-btn--shop"><i class="fas fa-shopping-cart"></i></button>
+                                            <button type="button" class="btn"><i class="fas fa-shopping-cart"></i></button>
                                         </td>
                                     </tr>                                          
                                 </tbody>
@@ -391,7 +400,7 @@
                                 <h5 class="card-title">Oscar Awards</h5>
                                 <h4 class="card-title"><i class="pb-3 fas fa-calendar icon-calendar"></i>01/02/2018s</h4>
                                 <p class="card-text pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis...</p>
-                                <a href="#" class="btn  btn-sm">READ MORE</a>
+                                <a href="#" class="btn">READ MORE</a>
                             </div>
                         </div>  
                     </div>
@@ -403,7 +412,7 @@
                                 <h5 class="card-title">Top Upcoming Movies</h5>
                                 <h4 class="card-title"><i class="pb-3 fas fa-calendar icon-calendar"></i>01/02/2018s</h4>
                                 <p class="card-text pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis...</p>
-                                <a href="#" class="btn  btn-sm">READ MORE</a>
+                                <a href="#" class="btn">READ MORE</a>
                             </div>
                         </div>  
                     </div>
@@ -413,17 +422,28 @@
 
         <section class="join">
             <div class="container pt-5">
-                <div class="row text-justify text-center pt-5 d-flex flex-column">
-                    <h1 class="display-5 font-weight-bold ">Join Movify Now!</h1>
-                    <h6 class="font-weight-light pt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing.</h6>
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <h2>Join Movify Now!</h2>
+                        <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing.</h6>
+                    </div>
                 </div>
-                <div class="row pt-5">
-                    <form class="form-inline my-2">
-                        <input class="form-control form-control-lg" type="search" placeholder="Your Email" aria-label="Search">
-                        <button type="button" class="btn my-btn">SUBSCRIBE</button>    
-                </form>
+
+        
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-sm-10 col-12">
+                        <form action="#" class="mailchimp mt-50" novalidate="true">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="email" name="EMAIL" class="form-control" id="mc-email" placeholder="Your Email" autocomplete="off">
+                                    <label for="mc-email"></label>
+                                    <button type="submit" class="btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-             </div>
+            </div>
          </section>
 
          <section class="footer">

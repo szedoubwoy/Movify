@@ -31,6 +31,10 @@ img {
 .img-box, html, main, section {
   position: relative; }
 
+a:focus, a:hover, a:visited {
+  text-decoration: none !important;
+  outline: 0 !important; }
+
 .parallax {
   position: relative;
   background-repeat: no-repeat;
@@ -39,52 +43,68 @@ img {
   z-index: 59;
   opacity: 0; }
 
-.myform {
-  position: absolute;
-  padding-top: 44%;
-  padding-left: 39%; }
+.form-pos {
+  position: relative;
+  padding-top: 850px;
+  padding-left: 740px; }
 
-.nav-item {
-  display: flex;
-  justify-content: center;
-  font-weight: bold; }
+.form-pos-2 {
+  position: relative;
+  padding-left: 1400px; }
 
 .carousel {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  position: absolute; }
-
-.carousel-control-prev, .carousel-control-next {
-  margin-top: 12%; }
-
-.carousel-caption {
-  padding-top: 18%;
-  bottom: auto; }
+  position: relative; }
+  .carousel-control-prev {
+    margin-top: 12%; }
+  .carousel-control-next {
+    margin-top: 12%; }
+  .carousel-caption {
+    padding-top: 18%;
+    bottom: auto; }
 
 .header {
-  height: 100vh; }
+  background: 0 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99; }
+  .header .navbar .nav-item {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff !important;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px; }
+  .header .navbar-nav {
+    font-size: 16px;
+    text-transform: capitalize; }
+  .header .navbar-nav-link {
+    display: block;
+    padding: .5rem 1rem; }
 
 .ptb-100 {
-  padding: 160px 0;
-  padding-top: 180px;
+  padding: 100px 0;
+  padding-top: 100px;
   padding-right: 0px;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
   padding-left: 0px; }
 
 .mt-50 {
   margin-top: 50px; }
 
 .latest-1 {
-  display: block;
-  height: 150vh; }
+  display: block; }
   .latest-1 h1 {
     font-weight: 600;
     color: #3e4555;
     font-size: 38px; }
 
 .latest-2 {
-  height: 150vh;
   margin-top: 60px; }
   .latest-2 h1 {
     font-weight: 600;
@@ -166,7 +186,6 @@ img {
     margin-inline-end: 0px; }
 
 .upcoming {
-  height: 80vh;
   opacity: 0.95;
   margin-top: 100px;
   padding-bottom: 40px;
@@ -189,6 +208,7 @@ img {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
+  border: none;
   pointer-events: none; }
   .my-badge--second {
     color: #2a7bc2;
@@ -206,52 +226,34 @@ img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%; }
 
-.my-btn {
-  background-color: #953595;
+.btn {
+  background: #9352b3;
   color: white;
-  width: 110px;
-  height: 46px;
-  font-size: 14px;
+  outline: 0;
+  padding: 0 15px;
+  position: relative;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 35px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-bottom-left-radius: 0;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-bottom-right-radius: 4px;
-  transition: .5s all; }
-  .my-btn--shop {
-    background-color: #953595;
-    color: white;
-    width: 45px;
-    height: 40px;
-    font-size: 14px;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px; }
-  .my-btn--social {
-    color: #00b489;
-    background-color: #a9e6cf;
-    font-size: 12px;
-    max-width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%; }
-  .my-btn:hover {
+  border: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  .btn:hover {
     background-color: #9e64bb;
     color: white;
     text-shadow: .1px .1px;
     text-decoration: none !important;
     outline: 0 !important;
     transition-delay: 0s; }
+  .btn:active, .btn:focus {
+    outline: none !important;
+    box-shadow: none; }
+  .btn--viewall {
+    max-width: 100px;
+    height: 20px; }
 
 .border-leftt {
   border-left: 2px dashed lightgray; }
@@ -260,7 +262,6 @@ img {
   border-right: 2px dashed lightgray; }
 
 .how {
-  height: 205vh;
   background-color: #edf5f7 !important;
   margin-top: 90px; }
   .how h3 {
@@ -280,7 +281,6 @@ img {
     padding-left: 100px; }
 
 .stats {
-  height: 20vh;
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
@@ -297,7 +297,6 @@ img {
     font-size: 26px; }
 
 .members {
-  height: 70vh;
   padding-top: 100px;
   background-color: white; }
   .members h3 {
@@ -322,7 +321,6 @@ img {
     padding-bottom: 10px; }
 
 .news {
-  height: 95vh;
   background-color: #edf5f7 !important;
   text-align: center; }
   .news h6 {
@@ -363,23 +361,22 @@ img {
     padding-right: 5px; }
 
 .join {
-  height: 45vh;
   background-color: #e7edef; }
-  .join form {
-    position: relative;
-    width: 100%;
-    padding-left: 370px; }
-    .join form input {
-      width: 200px; }
-  .join button {
-    position: absolute;
-    margin-left: 315px; }
+  .join h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 38px;
+    color: #3e4555;
+    font-weight: 600;
+    margin: .8em 0; }
   .join h6 {
     color: #a6a6a6;
     font-size: 18px;
-    line-height: 30px;
-    margin-inline-start: 12em;
-    margin-inline-end: 12em; }
+    line-height: 30px; }
+  .join button {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0; }
 
 .general-listing {
   display: inline-block;
@@ -408,7 +405,6 @@ img {
 .footer {
   position: relative;
   flex-direction: column;
-  height: 50vh;
   background-color: #3e4555 !important;
   padding-top: 90px;
   color: #948a99; }
@@ -548,3 +544,17 @@ img {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
   filter: alpha(opacity=1);
   opacity: 1; }
+
+/*
+    div class="row text-justify text-center pt-5 d-flex flex-column">
+                    <h1 class="display-5 font-weight-bold ">Join Movify Now!</h1>
+                    <h6 class="font-weight-light pt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing.</h6>
+                </div>
+                <div class="row pt-5">
+                    <form class="form-inline my-2">
+                            <input type="email" name="EMAIL" class="form-control" id="mc-email" placeholder="Your Email" autocomplete="off">
+                        <input class="form-control form-control-lg" type="search" placeholder="Your Email" aria-label="Search">
+                        <button type="button" class="btn">SUBSCRIBE</button>    
+                </form>
+                </div>
+*/
