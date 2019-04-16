@@ -6,6 +6,15 @@
 .navbar-toggler{  background:#fff !important;
 }*/
 
+// Required
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Example usage:
+@include media-breakpoint-up(sm) {
+  .some-class {
+    display: block;
+  }
+}
+//$spacer: 100px;
 
 *{
   -webkit-box-sizing: border-box;
@@ -125,30 +134,64 @@ a:focus, a:hover, a:visited {
 }
 
 .ptb-100{
-    padding: 100px 0;
+   // padding: 100px 0;
     padding-top: 100px;
     padding-right: 0px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     padding-left: 0px;
+}
+
+.ptb-30{
+  padding: 30px 0;
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  padding-left: 0px;
 }
 
 .mt-50{
   margin-top: 50px;
 }
 
+.mt-10{
+  margin-top: 9px;
+}
+
+.movie-box-2 {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ // margin-right: 5px;
+  .poster{
+    //max-height: 450px;
+    overflow: hidden;
+    position: relative;
+    img{
+      width: 266px;
+      height: 415px;
+    }
+  }
+
+  .buttons{
+
+  }
+}
+
 .latest-1{
-  display: block;
-  //height: 100vh;
+  //display: inline-block;
+  position: relative;
+  transition: .2s ease-in-out;
+ 
   h1{
     font-weight: 600;
     color: #3e4555;
     font-size: 38px;
     }
+
 }
 
 
  .latest-2{
-   // height: 150vh;
     margin-top: 60px;
 
     h1{
@@ -259,12 +302,18 @@ a:focus, a:hover, a:visited {
  .upcoming{
    // height: 80vh;
     opacity: 0.95;
-    margin-top: 100px;
-    padding-bottom: 40px;
-    padding-top: 90px;
+    //margin-top: 100px;
+    //padding-bottom: 20px;
+   // padding-top: 90px;
     background-image: url('../images/blurred.jpg');
     background-attachment: fixed;
     background-position: 50% -51.7904px;
+    h1{
+      margin: 0;
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 38px;
+    }
   }
 
 .my-badge {
@@ -395,6 +444,7 @@ a:focus, a:hover, a:visited {
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
+    padding-bottom: 20px;
     background: #9352b3;
     background: -webkit-linear-gradient(legacy-direction(to right),#9352b3 0,#a11f3c 100%);
     background: -webkit-gradient(linear,left top,right top,from(#9352b3),to(#a11f3c));
@@ -414,6 +464,7 @@ a:focus, a:hover, a:visited {
 .members {
     //height: 70vh;
     padding-top: 100px;
+    padding-bottom: 60px;
     background-color: white;    
 
     h3 {
@@ -471,24 +522,8 @@ a:focus, a:hover, a:visited {
       color: #999;
       font-weight: 300;
       font-size: 16px;
-      padding-top: 3px;
+      //padding-top: 3px;
     }
-
-    .btn {
-      background-color: #9352b3;
-      color: white;
-      font-weight: bold;
-      transition: .5s all;
-      &:hover {
-        background-color: lighten($color: #9352b3, $amount: 5);
-        text-shadow: .1px .1px;
-        text-decoration: none!important;
-        outline: 0!important;
-        transition-delay: 0s;
-      }
-    }
-
-
   }
 
   .icon-calendar {
@@ -498,8 +533,6 @@ a:focus, a:hover, a:visited {
   }
   
 }
-
-
 
 .join{
   //height: 45vh;
@@ -566,11 +599,11 @@ a:focus, a:hover, a:visited {
 }
 
 .footer {
-  position: relative;
-  flex-direction: column;
+  //p//osition: relative;
+  ///flex-direction: column;
  //height: 50vh;
   background-color: #3e4555!important;
-  padding-top: 90px;
+  //padding-top: 90px;
   color:#948a99;
 
   h4{
