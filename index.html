@@ -9,9 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Movify</title>
     <link rel="stylesheet" href="prod-assets/style.css">
   </head>
@@ -19,12 +17,12 @@
       <header class="header">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg navbar-dark">
-                        <a class="navbar-brand  font-weight-bold" style="font-size: 38px;" href="#">Movify</a>
+                        <a class="navbar-brand font-weight-bold" style="font-size: 38px;" href="#">Movify</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         
-                        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                        <div class="navbar-collapse collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item active">
                                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
@@ -82,28 +80,28 @@
                             
                         </div>
                         
-                </nav>  
+                    </nav>  
                 </div>
-            </header>  
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        </header>  
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active" data-interval="10000">
                         <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
                             <h1 class="display-3 font-weight-bold">Dark Knight</h1>
                         </div>
-                    <img class="d-block h-80 img-fluid" src="images/slide_1.jpg" alt="">
+                    <img class="d-block img-fluid" src="images/slide_1.jpg" alt="">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-interval="10000">
                         <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
                             <h1 class="display-3 font-weight-bold">BLADE RUNNER</h1>
                         </div>
-                    <img class="d-block h-80 img-fluid" src="images/slide_2.jpg" alt="">
+                    <img class="d-block img-fluid" src="images/slide_2.jpg" alt="">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-interval="10000">
                         <div class="carousel-caption d-none d-md-block font-weight-bold text-uppercase">
                             <h1 class="display-3 font-weight-bold">2001: A Space Oddysey</h1>
                         </div>
-                    <img class="d-block h-80 img-fluid" src="images/slide_3.jpg" alt="">
+                    <img class="d-block img-fluid" src="images/slide_3.jpg" alt="">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -112,7 +110,7 @@
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </a>
-            </div>
+        </div>
     
     <section class="latest-1 ptb-100">
         <div class="container">
@@ -125,7 +123,7 @@
                 </div>
             </div>
             <div class="row mt-2">
-                <div class="col-lg-3 col-md-6 col-sm-12 mr-sm-0 mx-auto">
+                <div class="col-lg-3 col-md-6 col-sm-12 mr-sm-0 mx-auto float-md-none float-sm-left">
                     <div class="movie-box-2">
                         <div class="poster">
                              <img class="img-fluid rounded shadow-lg" src="images/latest_1.jpg" alt="">
@@ -164,7 +162,7 @@
                         <h1 class="justify-content-center text-white">Upcoming Movies & TV Shows</h1>
                     </div>
                  </div>
-                <div class="row mt-50 mx-auto">
+                <div class="row mt-50">
                     <div class="col-md-8">
                         <div class="movie-box">
                             <div class="poster">
@@ -176,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mx-auto">
+                    <div class="col-md-4 r-mt">
                            <div class="movie-box">
                                 <div class="poster">
                                     <img src="images/upcoming_small_1.jpg" alt="">
@@ -186,7 +184,7 @@
                                     <span class="released">Release Date: 15 Mar 2018</span>
                                 </div>
                             </div>
-                             <div class="movie-box mt-10 mx-auto">
+                             <div class="movie-box r-mt mt-1">
                                 <div class="poster">
                                     <img src="images/upcoming_small_2.jpg" alt="">
                                 </div>
@@ -241,59 +239,62 @@
                     </div>
                 </div>
             </div>
-        </section>
-    <section class="how py-3">
-        <div class="container py-5 ">
-            <div class="row text-justify text-center " style="flex-direction: column;">
-                <h1 class="display-5 font-weight-bold ">How it works?</h1>
-                <p class="text-muted p-3 font-weight-light" style="font-size: 18px;">We will show you step by step how to start watching your favorite movies & tv shows starting now!</p>
+    </section>
+
+    <section class="how ptb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 text-center">
+                    <h1 class="display-5 font-weight-bold ">How it works?</h1>
+                    <p class="text-muted p-3 font-weight-light">We will show you step by step how to start watching your favorite movies & tv shows starting now!</p>
+                </div>
             </div>
-            <div class="row d-flex justify-content-center pt-5">
-                <button type="button" class="my-badge" disabled>step 1</button>
+            <div class="row justify-content-center">
+                <span class="my-badge" style="">step 1</span>
             </div>
             <div class="row">
-                <div class="col col-lg-6 col-md-6 col-sm-12 ">
-                    <h3 >Create an account</h3>
-                    <p class="p-3 text-justify font-weight-light text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col-md-6 col-sm-12 ">
+                    <h3>Create an account</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <div class="col col-lg-6 col-md-6 col-sm-12 border-leftt">
-                    <img class="img-fluid" src="images/how_1.png" alt="">
+                <div class="col-md-6 col-sm-12 border-leftt">
+                    <img class="img-fluid d-none d-md-block" src="images/how_1.png" alt="">
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center">
-                <button type="button" class="my-badge my-badge--second" disabled>step 2</button>
+            <div class="row justify-content-center">
+                <span class="my-badge my-badge--second" style="">step 2</span>
             </div>
             <div class="row">
-                <div class="col col-lg-6 col-md-6 col-sm-12 pt-5 border-rightt" >
-                    <img class="img-fluid" src="images/how_2.png" alt="">
+                <div class="col-md-6 col-sm-12 border-rightt" >
+                    <img class="img-fluid d-none d-md-block" src="images/how_2.png">
                 </div>
-                <div class="col col-lg-6 col-md-6 col-sm-12 right">
-                    <h3 class="">Choose your Plan</h1>
-                    <p class="pt-3 pl-3 text-justify font-weight-light text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="col-md-6 col-sm-12">
+                    <h3 >Choose your Plan</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center">
-                <button type="button" class="my-badge my-badge--third" disabled>step 3</button>
+            <div class="row justify-content-center">
+                <span class="my-badge my-badge--third" style="">step 3</span>
             </div>
             <div class="row">
-                <div class="col col-lg-6 col-md-6 col-sm-12 ">
+                <div class=" col-md-6 col-sm-12 ">
                     <h3 class="">Enjoy Movify</h1>
-                    <p class=" p-3 text-justify font-weight-light text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <div class="col col-lg-6 col-md-6 col-sm-12 border-leftt" >
-                    <img class="img-fluid" src="images/how_3.png" alt="">
+                <div class="col-md-6 col-sm-12 border-leftt" >
+                    <img class="img-fluid d-none d-md-block" src="images/how_3.png" alt="">
                 </div>
             </div>
-            <div class="row d-flex justify-content-center">
-                <button type="button" class="fas fa-check my-badge my-badge--ok" disabled></button>
+            <div class="row justify-content-center ">
+                <span class="d-none d-md-block fas fa-check my-badge my-badge--ok"></span>
             </div>
         </div>
     </div>
     </section>
 
-    <section class="stats mt-5">
+    <section class="stats">
         <div class="container">
             <div class="row pt-5">
                 <div class="col-4 col-lg-4">
@@ -385,27 +386,29 @@
     </section>
 
     <section class="news ptb-100">
-            <div class="container pt-3">
-                <div class="row text-justify text-center pt-5" style=" flex-direction: column;">
-                    <h1 class="display-5 font-weight-bold ">Latest News</h1>
-                    <h6 class="font-weight-light pt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing.</h6>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <h1 class="font-weight-bold">Latest News</h1>
+                        <h6 class="font-weight-light text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy consectetuer adipiscing.</h6>
+                    </div>
                 </div>
-                <div class="row pt-5">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card" style="">
-                            <img class="card-img-top" src="images/news_1.jpg" alt="">
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/news_1.jpg">
                             <div class="card-body">
                                 <h5 class="card-title">Top 10 Action Movies</h5>
                                 <h4 class="card-title"><i class="pb-3 fas fa-calendar icon-calendar"></i>01/02/2018s</h4>
                                 <p class="card-text pb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis...</p>
-                                <a href="#" class="btn  btn-sm">READ MORE</a>
+                                <a href="#" class="btn">READ MORE</a>
                             </div>
                         </div>  
                     </div>
 
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card" style="">
-                            <img class="card-img-top" src="images/news_2.jpg" alt="">
+                    <div class="col-md-4 mt-md-0 mt-5">
+                        <div class="card">
+                            <img class="card-img-top" src="images/news_2.jpg">
                             <div class="card-body">
                                 <h5 class="card-title">Oscar Awards</h5>
                                 <h4 class="card-title"><i class="pb-3 fas fa-calendar icon-calendar"></i>01/02/2018s</h4>
@@ -415,9 +418,9 @@
                         </div>  
                     </div>
 
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card" style="">
-                            <img class="card-img-top" src="images/news_3.jpg" alt="">
+                    <div class="col-md-4 mt-md-0 mt-5">
+                        <div class="card">
+                            <img class="card-img-top" src="images/news_3.jpg">
                             <div class="card-body">
                                 <h5 class="card-title">Top Upcoming Movies</h5>
                                 <h4 class="card-title"><i class="pb-3 fas fa-calendar icon-calendar"></i>01/02/2018s</h4>
@@ -510,33 +513,38 @@
                 </div>
             </div>
             <hr ></hr>
-            <div class="container ptb-30">
-                <div class="row">
-                        <div class="col-md-12 d-flex flex-wrap">
-                            <div class="footer-copyright">
-                                <ul>
-                                    <li>
-                                        <a href="#">Privacy & Cookies</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Terms & Conditions</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Legal Disclaimer</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Community</a>
-                                    </li>
-                                </ul>
+            <div class="footer-area">
+                <div class="container ptb-30">
+                    <div class="row">
+                            <div class="col-md-9">
+                                <div class="footer-copyright">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Privacy & Cookies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms & Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Legal Disclaimer</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Community</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="copyright ml-auto">
-                                All Rights Reserved by
-                                <a href="#">Movify</a>
+                            <div class="col-md-3">
+                                <div class="copyright ml-auto">
+                                    All Rights Reserved by 
+                                    <a href="#"> Movify</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+           
         </footer>
     
     

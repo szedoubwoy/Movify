@@ -9,12 +9,15 @@
 // Required
 @import "../node_modules/bootstrap/scss/bootstrap";
 // Example usage:
-@include media-breakpoint-up(sm) {
-  .some-class {
-    display: block;
+@include media-breakpoint-down(sm) {
+  .r-mt {
+      margin-top: 10px;
+  }
+  
+  .r-wdth{
+
   }
 }
-//$spacer: 100px;
 
 *{
   -webkit-box-sizing: border-box;
@@ -62,6 +65,7 @@ a:focus, a:hover, a:visited {
   opacity: 0;
 }
 
+
 .form-pos {
   position: relative;
   padding-top: 850px;
@@ -74,20 +78,59 @@ a:focus, a:hover, a:visited {
 }
 
 .carousel {
+  min-height: 500px;
+  min-width: 500px;
   background-size:cover; 
   background-position:center center; 
   background-repeat:no-repeat;
   position: relative;
 
+  @include media-breakpoint-down(sm) {
+    &-item{
+      height: 500px;
+      width: auto;
+      object-fit: scale-down;
+    }
+  
+    img {
+      height: 500px;
+      width: auto;
+    //  object-fit: scale-down;
+     // object-position: 100% 50%;
+    }
+    &--carousel-inner{
+     // height: 500px;
+    //  width: auto;
+     // object-fit: scale-down;
+    }
+  }
+
+  .tales {
+    width: 100%;
+  }
+  .carousel-inner{
+    width:100%;
+    height: 100%;
+  }
+
   &-control-prev{
     margin-top: 12%;
+    @include media-breakpoint-down(sm) {
+     // padding-bottom: 200px;
+    }
   }
 
   &-control-next{
     margin-top: 12%;
+    @include media-breakpoint-down(sm) {
+     // padding-bottom: 200px;
+    }
   }
 
   &-caption {
+    @include media-breakpoint-down(sm) {
+      //padding-bottom: 200px;
+    }
     padding-top: 18%;
     bottom: auto;
   }
@@ -103,7 +146,6 @@ a:focus, a:hover, a:visited {
 //}
 
 .header {
- //height: 75vh;
  background: 0 0;
  width: 100%;
  position: absolute;
@@ -137,17 +179,33 @@ a:focus, a:hover, a:visited {
    // padding: 100px 0;
     padding-top: 100px;
     padding-right: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     padding-left: 0px;
+      @include media-breakpoint-down(sm) {
+        padding-top: 40px;
+        padding-right: 0px;
+        padding-bottom: 70px;
+        padding-left: 0px;
+    }
+  
 }
 
 .ptb-30{
-  padding: 30px 0;
+ // padding: 30px 0;
   padding-top: 30px;
   padding-right: 0px;
   padding-bottom: 30px;
   padding-left: 0px;
 }
+
+.ptb-50{
+ // padding: 50px 0;
+  padding-top: 50px;
+  padding-right: 0px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+}
+
 
 .mt-50{
   margin-top: 50px;
@@ -161,9 +219,7 @@ a:focus, a:hover, a:visited {
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
- // margin-right: 5px;
   .poster{
-    //max-height: 450px;
     overflow: hidden;
     position: relative;
     img{
@@ -172,13 +228,13 @@ a:focus, a:hover, a:visited {
     }
   }
 
-  .buttons{
-
-  }
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    justify-content: center;
+   }
 }
 
 .latest-1{
-  //display: inline-block;
   position: relative;
   transition: .2s ease-in-out;
  
@@ -186,21 +242,20 @@ a:focus, a:hover, a:visited {
     font-weight: 600;
     color: #3e4555;
     font-size: 38px;
-    }
+    @include media-breakpoint-down(sm) {
+      text-align:center;
+      padding: 0;
+   }
+  }
+
+  a{
+    display: inline-block;
+    @include media-breakpoint-down(sm) {
+        display: none;
+     }
+  }
 
 }
-
-
- .latest-2{
-    margin-top: 60px;
-
-    h1{
-    font-weight: 600;
-    color: #3e4555;
-    font-size: 38px;
-    }
-}
- 
 
 .movie-box{
     position: relative;
@@ -300,11 +355,7 @@ a:focus, a:hover, a:visited {
 }
 
  .upcoming{
-   // height: 80vh;
     opacity: 0.95;
-    //margin-top: 100px;
-    //padding-bottom: 20px;
-   // padding-top: 90px;
     background-image: url('../images/blurred.jpg');
     background-attachment: fixed;
     background-position: 50% -51.7904px;
@@ -317,6 +368,9 @@ a:focus, a:hover, a:visited {
   }
 
 .my-badge {
+ // display: block;
+  //position: absolute;
+  left: 47.3%;
   background-color: #e3e3e3;
   color: #767676;
   width: 110px;
@@ -332,15 +386,18 @@ a:focus, a:hover, a:visited {
    border-radius: 30px;
    border: none;
    pointer-events: none;
+   line-height: 26px;
 
    &--second {
     color: #2a7bc2;
     background-color: #c1ddf5;
+   // line-height: 20px;
    }
 
    &--third {
     color: #eb305f;
     background-color: #f9c8d4;
+    //line-height: 20px;
   
    }
 
@@ -348,8 +405,10 @@ a:focus, a:hover, a:visited {
     color: #00b489;
     background-color: #a9e6cf;
     font-size: 24px; 
+    line-height: 42px;
     width: 60px;
     height: 60px;
+    left: 48.5%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -395,20 +454,20 @@ a:focus, a:hover, a:visited {
   }
 }
 
-.input-email {
-  
-}
-
 .border-leftt{
-  border-left: 2px dashed lightgray;
+  @include media-breakpoint-up(md) {
+    border-left: 2px dashed lightgray;
+  }
+ 
 }
 
 .border-rightt{
-  border-right: 2px dashed lightgray;
+  @include media-breakpoint-down(sm) {
+    border-right: 2px dashed lightgray;
+  }
 }
 
 .how {
-   // height: 205vh;
     background-color: #edf5f7!important;
     margin-top: 90px;
 
@@ -420,17 +479,36 @@ a:focus, a:hover, a:visited {
     }
 
     p {
-        font-size: 14px;
-        color: lighten($color: dimgray, $amount: 25)
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 10px;
+      color: lighten($color: dimgray, $amount: 25);
+      margin-bottom: 1.7em;
+      margin-top: 0;
     }
 
     img {
-        display: block;
-        margin: 0 auto;
+      vertical-align: middle;
+      margin: 0 auto;
     }
 
-    .col {
-        height: 450px;
+    @include media-breakpoint-down(sm) {
+      padding-top: 40px;
+      margin-top: 0px;
+      .row, span{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      span {
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+
+     h3{
+       padding-top: 10px;
+     }
     }
 
     .right {
@@ -440,7 +518,6 @@ a:focus, a:hover, a:visited {
 }
 
 .stats {
-   // height: 20vh;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
@@ -462,12 +539,14 @@ a:focus, a:hover, a:visited {
 }
 
 .members {
-    //height: 70vh;
     padding-top: 100px;
     padding-bottom: 60px;
     background-color: white;    
-
+    @include media-breakpoint-down(sm) {
+      padding-top: 50px;
+    }
     h3 {
+      
       padding-top: 0;
       padding-left: 0;
       padding-bottom: 12px;
@@ -493,23 +572,30 @@ a:focus, a:hover, a:visited {
 }
 
 .news {
- // height: 95vh;
   background-color: #edf5f7!important;
-  text-align: center;
 
+  h1{
+    font-size: 38px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  
   h6{
-    display: block;
-    max-width: 800px;
-    color: lighten($color: gray, $amount: 15);
+    margin: 0;
     font-size: 18px;
+    font-weight: 400;
+    color: #8d97ad;
     line-height: 30px;
-    margin-inline-start: 9em;
-    margin-inline-end: 50px;
   }
 
   .card {
+    text-align: center;
     max-width: 500px;
     height: 550px;
+
+    .card-text {
+      color: #999;
+    }
 
     img{
       max-width: 500px; 
@@ -522,7 +608,11 @@ a:focus, a:hover, a:visited {
       color: #999;
       font-weight: 300;
       font-size: 16px;
-      //padding-top: 3px;
+    
+    }
+
+    button {
+      padding-bottom: 10px;
     }
   }
 
@@ -599,12 +689,21 @@ a:focus, a:hover, a:visited {
 }
 
 .footer {
-  //p//osition: relative;
-  ///flex-direction: column;
- //height: 50vh;
   background-color: #3e4555!important;
-  //padding-top: 90px;
   color:#948a99;
+
+    @include media-breakpoint-down(sm) {
+      h4, p, hr{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
 
   h4{
     font-size: 24px;
@@ -630,10 +729,6 @@ a:focus, a:hover, a:visited {
     border-style:solid;
     border-width: .1px;
   }
-
-  button{
-    padding-right: 25px;
-  }
   
   a {
     color: darken($color: white, $amount: 10);
@@ -649,6 +744,13 @@ a:focus, a:hover, a:visited {
 }
 
 .footer-copyright{
+  @include media-breakpoint-down(sm) {
+    ul, li, a {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
   color: #948a99;
   font-size: 15px;
   line-height: 22px;
@@ -667,9 +769,12 @@ a:focus, a:hover, a:visited {
 }
 
 .copyright{
-  margin-left: auto !important;
-  margin-right: 50px;
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    justify-content: center;
+  } 
   color: darken($color: white, $amount: 10);
+ 
 }
 
 
