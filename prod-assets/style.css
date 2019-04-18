@@ -1,10 +1,3 @@
-/*.navbar{ background:#F97300;}
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
-.nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
-.navbar-collapse{ justify-content: flex-end;}
-.navbar-toggler{  background:#fff !important;
-}*/
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7069,42 +7062,48 @@ a:focus, a:hover, a:visited {
   z-index: 59;
   opacity: 0; }
 
-.form-pos {
-  position: relative;
-  padding-top: 850px;
-  padding-left: 740px; }
-
-.form-pos-2 {
-  position: relative;
-  padding-left: 1400px; }
-
 .carousel {
-  min-height: 500px;
-  min-width: 500px;
+  height: 500px;
+  max-width: 500px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative; }
   @media (max-width: 767.98px) {
-    .carousel-item {
+    .carousel {
       height: 500px;
-      width: auto;
-      object-fit: scale-down; }
-    .carousel img {
-      height: 500px;
-      width: auto; } }
-  .carousel .tales {
-    width: 100%; }
-  .carousel .carousel-inner {
-    width: 100%;
-    height: 100%; }
+      max-width: 380px; }
+      .carousel--inner {
+        height: 500px;
+        max-width: 380px; }
+      .carousel-inner .carouselgt {
+        height: 500px;
+        max-width: 380px;
+        object-fit: fill; }
+      .carousel--item .carouselgt {
+        height: 500px;
+        max-width: 380px;
+        object-fit: fill; }
+      .carousel img {
+        height: 500px;
+        max-width: 380px;
+        object-fit: fill; } }
   .carousel-control-prev {
     margin-top: 12%; }
+    @media (max-width: 767.98px) {
+      .carousel-control-prev {
+        display: none; } }
   .carousel-control-next {
     margin-top: 12%; }
+    @media (max-width: 767.98px) {
+      .carousel-control-next {
+        display: none; } }
   .carousel-caption {
     padding-top: 18%;
     bottom: auto; }
+    @media (max-width: 767.98px) {
+      .carousel-caption {
+        display: none; } }
 
 .header {
   background: 0 0;
@@ -7161,13 +7160,59 @@ a:focus, a:hover, a:visited {
 .movie-box-2 {
   position: relative;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  transition: .2s ease-in-out; }
+  .movie-box-2:hover .poster img {
+    opacity: .4; }
+  .movie-box-2:hover .details {
+    opacity: 1;
+    -webkit-transition: opacity .25s ease-in-out .0s;
+    transition: opacity .25s ease-in-out .0s;
+    padding: 20px;
+    transition-delay: 0s; }
   .movie-box-2 .poster {
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a11f3c), to(#9352b3));
+    background: -webkit-linear-gradient(bottom, #9352b3 0%, #a11f3c 100%);
+    background: -o-linear-gradient(bottom, #9352b3 0%, #a11f3c 100%);
+    background: linear-gradient(to bottom, #a11f3c 0%, #9352b3 100%); }
     .movie-box-2 .poster img {
       width: 266px;
-      height: 415px; }
+      height: 415px;
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+  .movie-box-2 .details {
+    width: 250px;
+    max-height: auto;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    text-align: center;
+    padding: 0px;
+    opacity: 0;
+    top: 45%; }
+  .movie-box-2 .released {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    padding-top: 20px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease; }
+  .movie-box-2 .movie-title {
+    margin: 0;
+    color: #fff;
+    font-size: 24px; }
   @media (max-width: 767.98px) {
     .movie-box-2 {
       display: flex;
@@ -7344,7 +7389,7 @@ a:focus, a:hover, a:visited {
   .border-leftt {
     border-left: 2px dashed lightgray; } }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
   .border-rightt {
     border-right: 2px dashed lightgray; } }
 
@@ -7353,9 +7398,14 @@ a:focus, a:hover, a:visited {
   margin-top: 90px; }
   .how h3 {
     padding-top: 110px;
-    padding-left: 14px;
+    padding-left: 0px;
     font-weight: 510;
     color: #505050; }
+  @media (min-width: 768px) {
+    .how .h3-right {
+      padding-left: 50px; }
+    .how .p-right {
+      padding-left: 50px; } }
   .how p {
     font-size: 16px;
     line-height: 24px;
@@ -7370,6 +7420,8 @@ a:focus, a:hover, a:visited {
     .how {
       padding-top: 40px;
       margin-top: 0px; }
+      .how .h3-right {
+        text-align: center; }
       .how .row, .how span {
         display: flex;
         justify-content: center;
@@ -7378,6 +7430,7 @@ a:focus, a:hover, a:visited {
         margin-bottom: 20px;
         margin-top: 10px; }
       .how h3 {
+        text-align: center;
         padding-top: 10px; } }
   .how .right {
     padding-left: 100px; }
