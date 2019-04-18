@@ -52,14 +52,12 @@ a:focus, a:hover, a:visited {
 
 
 .carousel {
-  height: 500px;
-  max-width: 500px;
+  //height: 500px;
+ // max-width: 500px;
   background-size:cover; 
   background-position:center center; 
   background-repeat:no-repeat;
   position: relative;
-
-  
 
   @include media-breakpoint-down(sm) {
     height:500px;
@@ -107,22 +105,58 @@ a:focus, a:hover, a:visited {
   }
 
   &-caption {
-    @include media-breakpoint-down(sm) {
-      display: none;
+    h1{
+      white-space: nowrap;
+      color: white;
+      font-weight: 900;
+     // text-align: inherit;
+      //line-height: 45px;
+     // border-width: 0px;
+     // margin: 0px;
+     // padding: 0px;
+      //letter-spacing: 0px;
+      font-size: 68px;
+     // white-space: nowrap;
+     // min-height: 0px;
+     // min-width: 0px;
+     // max-height: none;
+     // max-width: none;
+     // opacity: 1;
+     @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      padding-top: 44%;
+      left: 35px;
+     }
     }
+
+      @include media-breakpoint-down(sm) {
+        .item-3{
+            font-size: 24px;
+           text-align: center;
+            padding-top: 44%;
+            left: 35px;
+           // padding-right: 20%;
+           }
+
+       }
+   
+   
     padding-top: 18%;
     bottom: auto;
   }
 }
 
-//.carousel-control-prev, .carousel-control-next {
- // margin-top: 12%;
-//}
-
-//.carousel-caption {
- // padding-top: 18%;
-//  bottom: auto;
-//}
+.search-wrapper {
+  position: absolute;
+   // top:100%;
+    left: 0;
+    right: 0;
+    padding-top: 300px;
+    z-index: 90;
+    @include media-breakpoint-down(sm) {
+      padding-top: 100px;
+    }
+}
 
 .header {
  background: 0 0;

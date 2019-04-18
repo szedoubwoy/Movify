@@ -7063,8 +7063,6 @@ a:focus, a:hover, a:visited {
   opacity: 0; }
 
 .carousel {
-  height: 500px;
-  max-width: 500px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -7101,9 +7099,32 @@ a:focus, a:hover, a:visited {
   .carousel-caption {
     padding-top: 18%;
     bottom: auto; }
+    .carousel-caption h1 {
+      white-space: nowrap;
+      color: white;
+      font-weight: 900;
+      font-size: 68px; }
+      @media (max-width: 767.98px) {
+        .carousel-caption h1 {
+          font-size: 32px;
+          padding-top: 44%;
+          left: 35px; } }
     @media (max-width: 767.98px) {
-      .carousel-caption {
-        display: none; } }
+      .carousel-caption .item-3 {
+        font-size: 24px;
+        text-align: center;
+        padding-top: 44%;
+        left: 35px; } }
+
+.search-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 300px;
+  z-index: 90; }
+  @media (max-width: 767.98px) {
+    .search-wrapper {
+      padding-top: 100px; } }
 
 .header {
   background: 0 0;
